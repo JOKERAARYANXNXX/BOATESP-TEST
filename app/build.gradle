@@ -1,0 +1,69 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.0"
+    compileOptions {
+        // This library uses Java 8 features, this is required
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    defaultConfig {
+        applicationId "com.boat.esp"
+        minSdkVersion 23
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+        /*externalNativeBuild {
+            cmake {
+                cFlags "-Wformat-extra-args -Wreturn-type -Wno-error=format-security -fvisibility=hidden -ffunction-sections -fdata-sections -w -Werror -s"
+                cppFlags "-Wformat-extra-args -Wreturn-type -Wno-error=format-security -fvisibility=hidden -ffunction-sections -fdata-sections -w -Werror -s -std=c++17"
+            }
+        }*/
+    }
+
+    buildTypes {
+        release {
+            shrinkResources false
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            shrinkResources false
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    /*externalNativeBuild {
+        cmake {
+            path "src/main/jni/CMakeLists.txt"
+            version "3.10.2"
+        }
+    }*/
+    //Folder cpp renamed to jni for AIDE support
+    externalNativeBuild {
+        ndkBuild {
+            path file('src/main/jni/Android.mk')
+        }
+    }
+    ndkVersion = '22.0.7026061'
+}
+repositories {
+        maven { url "https://jitpack.io" }
+}
+dependencies {
+ 
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    //  implementation 'com.android.support:appcompat-v7:24.2.1'
+    // implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+   // implementation 'androidx.cardview:cardview:1.0.0'
+  //  implementation 'com.github.yukuku:ambilwarna:2.0.1'
+ //   implementation 'com.android.support:multidex:1.0.1'
+
+    // Doens't work on AIDE
+    // testImplementation 'junit:junit:4.13'
+    // androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    // androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+}

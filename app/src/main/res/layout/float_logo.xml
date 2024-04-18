@@ -1,0 +1,1940 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:orientation="vertical"
+        android:id="@+id/espView"
+        android:background="#FF192231"
+        android:padding="0dp"
+        android:visibility="gone"
+        android:layout_width="380dp"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+            <TextView
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFFFF"
+                android:gravity="center"
+                android:id="@+id/textView4"
+                android:background="#FF192231"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="✖「7ʜ」ᴠɪᴘ ✖" />
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/closeBtn"
+            android:padding="10dp"
+            android:focusable="false"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/close"
+            android:scaleType="centerCrop"
+            android:tint="#FFFFFFFF"
+            android:layout_alignParentEnd="true" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/contentView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="45dp">
+            <LinearLayout
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:id="@+id/linear6"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0">
+                <ImageView
+                    android:layout_gravity="center"
+                    android:id="@+id/playerBtn"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/esp" />
+                <ImageView
+                    android:layout_gravity="center"
+                    android:id="@+id/itemBtn"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/loot" />
+                <ImageView
+                    android:layout_gravity="center"
+                    android:id="@+id/vehicleBtn"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/vehicle" />
+                <ImageView
+                    android:layout_gravity="center"
+                    android:id="@+id/safeBtn"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/aimbot" />
+                    
+                  <ImageView
+                    android:layout_gravity="center"
+                    android:id="@+id/MenuBtn"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/main_menu_c" />
+                    
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/players"
+                android:visibility="visible"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="4.0">
+                <ScrollView
+                    android:id="@+id/vscroll1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:id="@+id/players1"
+                        android:background="#FF1F2C3F"
+                        android:padding="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:textStyle="bold"
+                            android:textColor="#FFFFFFFF"
+                            android:id="@+id/textView99"
+                            android:focusable="false"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:text="Render Framerate" />
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <RadioGroup
+                                android:orientation="vertical"
+                                android:id="@+id/radioFPS"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="0dp">
+                                <RadioButton
+                                    android:textColor="#FFFFFFFF"
+                                    android:id="@+id/fpsdefault"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="30 FPS"
+                                    android:buttonTint="#FFFFFFFF" />
+                                <RadioButton
+                                    android:textColor="#FFFFFFFF"
+                                    android:id="@+id/fps60"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:checked="true"
+                                    android:text="60 FPS"
+                                    android:buttonTint="#FFFFFFFF" />
+                                <RadioButton
+                                    android:textColor="#FFFFFFFF"
+                                    android:id="@+id/fps90"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="90 FPS"
+                                    android:buttonTint="#FFFFFFFF" />
+                                <RadioButton
+                                    android:textColor="#FFFFFFFF"
+                                    android:id="@+id/fps120"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="120 FPS"
+                                    android:buttonTint="#FFFFFFFF" />
+                            </RadioGroup>
+                        </LinearLayout>
+                        <TextView
+                            android:textStyle="bold"
+                            android:textColor="#FFFFFFFF"
+                            android:id="@+id/textView991"
+                            android:focusable="false"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:text="ESP Generic Adjustment" />
+                        <Switch
+                            android:textColor="#FFFBFBFB"
+                            android:id="@+id/isBox"
+                            android:background="#FF1F2C3F"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="Box" />
+                        <Switch
+                            android:textColor="#FFFBFBFB"
+                            android:id="@+id/isLine"
+                            android:background="#FF1F2C3F"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="Line" />
+                        <Switch
+                            android:textColor="#FFFBFBFB"
+                            android:id="@+id/isDist"
+                            android:background="#FF1F2C3F"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="Distance" />
+                        <Switch
+                            android:textColor="#FFFBFBFB"
+                            android:id="@+id/isHealth"
+                            android:background="#FF1F2C3F"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="Health" />
+                        <Switch
+                            android:textColor="#FFFBFBFB"
+                            android:id="@+id/isName"
+                            android:background="#FF1F2C3F"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="Names" />
+                        <Switch
+                            android:textColor="#FFFBFBFB"
+                            android:id="@+id/isHead"
+                            android:background="#FF1F2C3F"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="Head Position" />
+                        <Switch
+                            android:textColor="#FFFBFBFB"
+                            android:id="@+id/isBack"
+                            android:background="#FF1F2C3F"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="360 Alert" />
+                        <Switch
+                            android:textColor="#FFFBFBFB"
+                            android:id="@+id/isSkelton"
+                            android:background="#FF1F2C3F"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="Skeleton" />
+                        <Switch
+                            android:textColor="#FFFBFBFB"
+                            android:id="@+id/isGrenadeWarning"
+                            android:background="#FF1F2C3F"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="Grenade Warning" />
+                        <Switch
+                            android:textColor="#FFFBFBFB"
+                            android:id="@+id/isEnemyWeapon"
+                            android:background="#FF1F2C3F"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:baselineAligned="false"
+                            android:text="Enemy Weapon" />
+                    </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/items"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="4.0">
+                <ScrollView
+                    android:id="@+id/vscroll3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:id="@+id/items1"
+                        android:background="#FF1F2C3F"
+                        android:padding="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:textStyle="bold"
+                            android:textColor="#FFFFFFFF"
+                            android:layout_gravity="center"
+                            android:id="@+id/special"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Special Items"
+                            android:textAlignment="center" />
+                        <TableLayout
+                            android:id="@+id/specialTab"
+                            android:visibility="visible"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <CheckBox
+                                    android:textColor="#FFFFFFFF"
+                                    android:id="@+id/FlareGun"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:checked="true"
+                                    android:text="Flare Gun" />
+                                <CheckBox
+                                    android:textColor="#FFFFFFFF"
+                                    android:id="@+id/GullieSuit"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:checked="true"
+                                    android:text="Ghillie Suit" />
+                            </TableRow>
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <CheckBox
+                                    android:textColor="#FFFFFFFF"
+                                    android:id="@+id/AirDrop"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:checked="true"
+                                    android:text="AirDrop" />
+                                <CheckBox
+                                    android:textColor="#FFFFFFFF"
+                                    android:id="@+id/DropPlane"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:checked="true"
+                                    android:text="DropPlane" />
+                            </TableRow>
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <CheckBox
+                                    android:textColor="#FFFFFFFF"
+                                    android:id="@+id/Crate"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:checked="true"
+                                    android:text="Crate" />
+                            </TableRow>
+                        </TableLayout>
+                        <TextView
+                            android:textStyle="bold"
+                            android:textColor="#FFFFFFFF"
+                            android:layout_gravity="center"
+                            android:id="@+id/scopes"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Scopes"
+                            android:textAlignment="center" />
+                        <TableLayout
+                            android:id="@+id/scopeTab"
+                            android:visibility="visible"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <CheckBox
+                                    android:textColor="#FFFFFFFF"
+                                    android:id="@+id/hollow"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:checked="true"
+                                    android:text="Hollow" />
+                                <CheckBox
+                                    android:textColor="#FFFFFFFF"
+                                    android:id="@+id/canted"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:checked="true"
+                                    android:text="Canted" />
+                            </TableRow>
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <CheckBox
+                                    android:textColor="#FFFFFFFF"
+                                    android:id="@+id/reddot"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:checked="true"
+                                    android:text="Red Dot" />
+                                <CheckBox
+                                    android:textColor="#FFFFFFFF"
+                                    android:id="@+id/twox"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:checked="true"
+                                    android:text="2x" />
+                            </TableRow>
+                            <TableRow
+                                android:textColor="#FFFFFFFF"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <CheckBox
+                                    android:textColor="#FFFFFFFF"
+                                    android:id="@+id/eightx"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:checked="true"
+                                    android:text="8x" />
+                                <CheckBox
+                                    android:textColor="#FFFFFFFF"
+                                    android:id="@+id/fourx"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:checked="true"
+                                    android:text="4x" />
+                            </TableRow>
+                            <TableRow
+                                android:textColor="#FFFFFFFF"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <CheckBox
+                                    android:textColor="#FFFFFFFF"
+                                    android:id="@+id/threex"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:checked="true"
+                                    android:text="3x" />
+                                <CheckBox
+                                    android:textColor="#FFFFFFFF"
+                                    android:id="@+id/sixx"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:checked="true"
+                                    android:text="6x" />
+                            </TableRow>
+                        </TableLayout>
+                        <TextView
+                            android:textStyle="bold"
+                            android:textColor="#FFFFFFFF"
+                            android:layout_gravity="center"
+                            android:id="@+id/arsmg"
+                            android:visibility="visible"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Auto and SMG"
+                            android:textAlignment="center" />
+                        <TableLayout
+                            android:id="@+id/scopeAutoSMG"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <CheckBox
+                                    android:textColor="#FFFFFFFF"
+                                    android:id="@+id/AUG"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:checked="true"
+                                    android:text="AUG" />
+                                <CheckBox
+                                    android:textColor="#FFFFFFFF"
+                                    android:id="@+id/M762"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:checked="true"
+                                    android:text="M762" />
+                                <CheckBox
+                                    android:textColor="#FFFFFFFF"
+                                    android:id="@+id/SCARL"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:checked="true"
+                                    android:text="SCAR-L" />
+                            </TableRow>
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <CheckBox
+                                    android:textColor="#FFFFFFFF"
+                                    android:id="@+id/M416"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:checked="true"
+                                    android:text="M416" />
+                                <CheckBox
+                                    android:textColor="#FFFFFFFF"
+                                    android:id="@+id/M16A4"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:checked="true"
+                                    android:text="M16A4" />
+                                <CheckBox
+                                    android:textColor="#FFFFFFFF"
+                                    android:id="@+id/Mk47Mutant"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:checked="true"
+                                    android:text="Mk47" />
+                            </TableRow>
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <CheckBox
+                                    android:textColor="#FFFFFFFF"
+                                    android:id="@+id/G36C"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:checked="true"
+                                    android:text="G36C" />
+                                <CheckBox
+                                    android:textColor="#FFFFFFFF"
+                                    android:id="@+id/QBZ"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:checked="true"
+                                    android:text="QBZ" />
+                                <CheckBox
+                                    android:textColor="#FFFFFFFF"
+                                    android:id="@+id/AKM"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:checked="true"
+                                    android:text="AKM" />
+                            </TableRow>
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <CheckBox
+                                    android:textColor="#FFFFFFFF"
+                                    android:id="@+id/Groza"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:checked="true"
+                                    android:text="Groza" />
+                                <CheckBox
+                                    android:textColor="#FFFFFFFF"
+                                    android:id="@+id/Bizon"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Bizon" />
+                                <CheckBox
+                                    android:textColor="#FFFFFFFF"
+                                    android:id="@+id/TommyGun"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="Tommy" />
+                            </TableRow>
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <CheckBox
+                                    android:textColor="#FFFFFFFF"
+                                    android:id="@+id/MP5K"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="MP5K" />
+                                <CheckBox
+                                    android:textColor="#FFFFFFFF"
+                                    android:id="@+id/UMP"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:checked="true"
+                                    android:text="UMP" />
+                                <CheckBox
+                                    android:textColor="#FFFFFFFF"
+                                    android:id="@+id/Vector"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="Vector" />
+                            </TableRow>
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <CheckBox
+                                    android:textColor="#FFFFFFFF"
+                                    android:id="@+id/Uzi"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Uzi" />
+                                <CheckBox
+                                    android:textColor="#FFFFFFFF"
+                                    android:id="@+id/DP28"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:checked="true"
+                                    android:text="DP28" />
+                                <CheckBox
+                                    android:textColor="#FFFFFFFF"
+                                    android:id="@+id/M249"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:checked="true"
+                                    android:text="M249" />
+                            </TableRow>
+                        </TableLayout>
+                        <TextView
+                            android:textStyle="bold"
+                            android:textColor="#FFFFFFFF"
+                            android:layout_gravity="center"
+                            android:id="@+id/snipers"
+                            android:visibility="visible"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Snipers"
+                            android:textAlignment="center" />
+                        <TableLayout
+                            android:id="@+id/sniperTab"
+                            android:visibility="visible"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <CheckBox
+                                    android:textColor="#FFFFFFFF"
+                                    android:id="@+id/AWM"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:checked="true"
+                                    android:text="AWM" />
+                                <CheckBox
+                                    android:textColor="#FFFFFFFF"
+                                    android:id="@+id/QBU"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:checked="true"
+                                    android:text="QBU" />
+                                <CheckBox
+                                    android:textColor="#FFFFFFFF"
+                                    android:id="@+id/SLR"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:checked="true"
+                                    android:text="SLR" />
+                            </TableRow>
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <CheckBox
+                                    android:textColor="#FFFFFFFF"
+                                    android:id="@+id/Mini14"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:checked="true"
+                                    android:text="Mini14" />
+                                <CheckBox
+                                    android:textColor="#FFFFFFFF"
+                                    android:id="@+id/M24"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:checked="true"
+                                    android:text="M24" />
+                                <CheckBox
+                                    android:textColor="#FFFFFFFF"
+                                    android:id="@+id/Kar98k"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:checked="true"
+                                    android:text="Kar98k" />
+                            </TableRow>
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <CheckBox
+                                    android:textColor="#FFFFFFFF"
+                                    android:id="@+id/VSS"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="VSS" />
+                                <CheckBox
+                                    android:textColor="#FFFFFFFF"
+                                    android:id="@+id/Win94"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Win94" />
+                                <CheckBox
+                                    android:textColor="#FFFFFFFF"
+                                    android:id="@+id/Mk14"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:checked="true"
+                                    android:text="Mk14" />
+                            </TableRow>
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <CheckBox
+                                    android:textColor="#FFFFFFFF"
+                                    android:id="@+id/SKS"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:checked="true"
+                                    android:text="SKS" />
+                            </TableRow>
+                        </TableLayout>
+                        <TextView
+                            android:textStyle="bold"
+                            android:textColor="#FFFFFFFF"
+                            android:layout_gravity="center"
+                            android:id="@+id/shotgunhaand"
+                            android:visibility="visible"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Shotgun and Pan"
+                            android:textAlignment="center" />
+                        <TableLayout
+                            android:id="@+id/shotgunTab"
+                            android:visibility="visible"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <CheckBox
+                                    android:textColor="#FFFFFFFF"
+                                    android:id="@+id/S12K"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="S12K" />
+                                <CheckBox
+                                    android:textColor="#FFFFFFFF"
+                                    android:id="@+id/DBS"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="DBS" />
+                            </TableRow>
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <CheckBox
+                                    android:textColor="#FFFFFFFF"
+                                    android:id="@+id/S1897"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="S1897" />
+                                <CheckBox
+                                    android:textColor="#FFFFFFFF"
+                                    android:id="@+id/S686"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="S686" />
+                            </TableRow>
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <CheckBox
+                                    android:textColor="#FFFFFFFF"
+                                    android:id="@+id/CrossBow"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Crossbow" />
+                                <CheckBox
+                                    android:textColor="#FFFFFFFF"
+                                    android:id="@+id/Pan"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Pan" />
+                            </TableRow>
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <CheckBox
+                                    android:textColor="#FFFFFFFF"
+                                    android:id="@+id/Machete"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Machete" />
+                                <CheckBox
+                                    android:textColor="#FFFFFFFF"
+                                    android:id="@+id/Crowbar"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Cowbar" />
+                            </TableRow>
+                            <CheckBox
+                                android:textColor="#FFFFFFFF"
+                                android:id="@+id/Sickle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Sickle" />
+                        </TableLayout>
+                        <TextView
+                            android:textStyle="bold"
+                            android:textColor="#FFFFFFFF"
+                            android:layout_gravity="center"
+                            android:id="@+id/pistols"
+                            android:visibility="visible"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Pistols"
+                            android:textAlignment="center" />
+                        <TableLayout
+                            android:id="@+id/pistolTab"
+                            android:visibility="visible"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <CheckBox
+                                    android:textColor="#FFFFFFFF"
+                                    android:id="@+id/SawedOff"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="SawedOff" />
+                                <CheckBox
+                                    android:textColor="#FFFFFFFF"
+                                    android:id="@+id/R1895"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="R1895" />
+                            </TableRow>
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <CheckBox
+                                    android:textColor="#FFFFFFFF"
+                                    android:id="@+id/P92"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="P92" />
+                                <CheckBox
+                                    android:textColor="#FFFFFFFF"
+                                    android:id="@+id/P18C"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="P18C" />
+                            </TableRow>
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <CheckBox
+                                    android:textColor="#FFFFFFFF"
+                                    android:id="@+id/P1911"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="P1911" />
+                                <CheckBox
+                                    android:textColor="#FFFFFFFF"
+                                    android:id="@+id/DesertEagle"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="Desert Eagle" />
+                            </TableRow>
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <CheckBox
+                                    android:textColor="#FFFFFFFF"
+                                    android:id="@+id/Vz61"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="Vz61" />
+                                <CheckBox
+                                    android:textColor="#FFFFFFFF"
+                                    android:id="@+id/R45"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="R45" />
+                            </TableRow>
+                        </TableLayout>
+                        <TextView
+                            android:textStyle="bold"
+                            android:textColor="#FFFFFFFF"
+                            android:layout_gravity="center"
+                            android:id="@+id/ammo"
+                            android:visibility="visible"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Ammo"
+                            android:textAlignment="center" />
+                        <TableLayout
+                            android:id="@+id/ammoTab"
+                            android:visibility="visible"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <CheckBox
+                                    android:textColor="#FFFFFFFF"
+                                    android:id="@+id/sst"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="7.62" />
+                                <CheckBox
+                                    android:textColor="#FFFFFFFF"
+                                    android:id="@+id/ffACP"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="45ACP" />
+                            </TableRow>
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <CheckBox
+                                    android:textColor="#FFFFFFFF"
+                                    android:id="@+id/nmm"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="9mm" />
+                                <CheckBox
+                                    android:textColor="#FFFFFFFF"
+                                    android:id="@+id/tzzMagnum"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="300Magnum" />
+                            </TableRow>
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <CheckBox
+                                    android:textColor="#FFFFFFFF"
+                                    android:id="@+id/ffs"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="5.56" />
+                                <CheckBox
+                                    android:textColor="#FFFFFFFF"
+                                    android:id="@+id/otGuage"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="12 Guage" />
+                            </TableRow>
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <CheckBox
+                                    android:textColor="#FFFFFFFF"
+                                    android:id="@+id/Arrow"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Arrow" />
+                            </TableRow>
+                        </TableLayout>
+                        <TextView
+                            android:textStyle="bold"
+                            android:textColor="#FFFFFFFF"
+                            android:layout_gravity="center"
+                            android:id="@+id/baghelmet"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Bag/Helmet/Vest"
+                            android:textAlignment="center" />
+                        <TableLayout
+                            android:id="@+id/bagTab"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <CheckBox
+                                    android:textColor="#FFFFFFFF"
+                                    android:id="@+id/Baglvl1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="Bag L1" />
+                                <CheckBox
+                                    android:textColor="#FFFFFFFF"
+                                    android:id="@+id/Baglvl2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="Bag L2" />
+                                <CheckBox
+                                    android:textColor="#FFFFFFFF"
+                                    android:id="@+id/Baglvl3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="Bag L3" />
+                            </TableRow>
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <CheckBox
+                                    android:textColor="#FFFFFFFF"
+                                    android:id="@+id/Helmetlvl1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Hel L1" />
+                                <CheckBox
+                                    android:textColor="#FFFFFFFF"
+                                    android:id="@+id/Helmetlvl2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Hel L2" />
+                                <CheckBox
+                                    android:textColor="#FFFFFFFF"
+                                    android:id="@+id/Helmetlvl3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Hel L3" />
+                            </TableRow>
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <CheckBox
+                                    android:textColor="#FFFFFFFF"
+                                    android:id="@+id/Vestlvl1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Vest L1" />
+                                <CheckBox
+                                    android:textColor="#FFFFFFFF"
+                                    android:id="@+id/Vestlvl2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Vest L2" />
+                                <CheckBox
+                                    android:textColor="#FFFFFFFF"
+                                    android:id="@+id/Vestlvl3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="Vest L3" />
+                            </TableRow>
+                        </TableLayout>
+                        <TextView
+                            android:textStyle="bold"
+                            android:textColor="#FFFFFFFF"
+                            android:layout_gravity="center"
+                            android:id="@+id/healthkits"
+                            android:visibility="visible"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Health Kits"
+                            android:textAlignment="center" />
+                        <TableLayout
+                            android:id="@+id/healthkitTab"
+                            android:visibility="visible"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <CheckBox
+                                    android:textColor="#FFFFFFFF"
+                                    android:id="@+id/Painkiller"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="PainKiller" />
+                                <CheckBox
+                                    android:textColor="#FFFFFFFF"
+                                    android:id="@+id/Adrenaline"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="Adrenaline" />
+                            </TableRow>
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <CheckBox
+                                    android:textColor="#FFFFFFFF"
+                                    android:id="@+id/FirstAidKit"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="FirstAid" />
+                                <CheckBox
+                                    android:textColor="#FFFFFFFF"
+                                    android:id="@+id/EnergyDrink"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Energy Drink" />
+                            </TableRow>
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <CheckBox
+                                    android:textColor="#FFFFFFFF"
+                                    android:id="@+id/Medkit"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Medkit" />
+                                <CheckBox
+                                    android:textColor="#FFFFFFFF"
+                                    android:id="@+id/Bandage"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="Bandage" />
+                            </TableRow>
+                        </TableLayout>
+                        <TextView
+                            android:textStyle="bold"
+                            android:textColor="#FFFFFFFF"
+                            android:layout_gravity="center"
+                            android:id="@+id/Throwables"
+                            android:visibility="visible"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Throwables"
+                            android:textAlignment="center" />
+                        <TableLayout
+                            android:id="@+id/ThrowablesTab"
+                            android:visibility="visible"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <CheckBox
+                                    android:textColor="#FFFFFFFF"
+                                    android:id="@+id/Stung"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="Stun Grenade" />
+                                <CheckBox
+                                    android:textColor="#FFFFFFFF"
+                                    android:id="@+id/Grenade"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="Grenade" />
+                            </TableRow>
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <CheckBox
+                                    android:textColor="#FFFFFFFF"
+                                    android:id="@+id/Smoke"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Smoke" />
+                                <CheckBox
+                                    android:textColor="#FFFFFFFF"
+                                    android:id="@+id/Molotov"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Molotov" />
+                            </TableRow>
+                        </TableLayout>
+                        <TextView
+                            android:textStyle="bold"
+                            android:textColor="#FFFFFFFF"
+                            android:layout_gravity="center"
+                            android:id="@+id/others"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Other Items"
+                            android:textAlignment="center" />
+                        <TableLayout
+                            android:id="@+id/otherTab"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <CheckBox
+                                android:textColor="#FFFBFBFB"
+                                android:id="@+id/FlashHiderAr"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Flash Hider Ar" />
+                            <CheckBox
+                                android:textColor="#FFFBFBFB"
+                                android:id="@+id/ArCompensator"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Ar Compensator" />
+                            <CheckBox
+                                android:textColor="#FFFBFBFB"
+                                android:id="@+id/SuppressorAr"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Suppressor Ar" />
+                            <CheckBox
+                                android:textColor="#FFFBFBFB"
+                                android:id="@+id/CompensatorSMG"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Compensator SMG" />
+                            <CheckBox
+                                android:textColor="#FFFBFBFB"
+                                android:id="@+id/TacticalStock"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Tactical Stock" />
+                            <CheckBox
+                                android:textColor="#FFFBFBFB"
+                                android:id="@+id/Duckbill"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Duckbill" />
+                            <CheckBox
+                                android:textColor="#FFFBFBFB"
+                                android:id="@+id/FlashHiderSniper"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Flash Hider Snp" />
+                            <CheckBox
+                                android:textColor="#FFFBFBFB"
+                                android:id="@+id/SuppressorSMG"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Suppressor SMG" />
+                            <CheckBox
+                                android:textColor="#FFFBFBFB"
+                                android:id="@+id/HalfGrip"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Half Grip" />
+                            <CheckBox
+                                android:textColor="#FFFBFBFB"
+                                android:id="@+id/Choke"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Choke" />
+                            <CheckBox
+                                android:textColor="#FFFBFBFB"
+                                android:id="@+id/StockMicroUZI"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Stock Micro UZI" />
+                            <CheckBox
+                                android:textColor="#FFFBFBFB"
+                                android:id="@+id/SniperCompensator"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="SniperCompensator" />
+                            <CheckBox
+                                android:textColor="#FFFBFBFB"
+                                android:id="@+id/SuppressorSniper"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Sup Sniper" />
+                            <CheckBox
+                                android:textColor="#FFFBFBFB"
+                                android:id="@+id/ExQdSniper"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Ex.Qd.Sniper" />
+                            <CheckBox
+                                android:textColor="#FFFBFBFB"
+                                android:id="@+id/QdSMG"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Qd.SMG" />
+                            <CheckBox
+                                android:textColor="#FFFBFBFB"
+                                android:id="@+id/ExSMG"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Ex.SMG" />
+                            <CheckBox
+                                android:textColor="#FFFBFBFB"
+                                android:id="@+id/QdSniper"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Qd.Sniper" />
+                            <CheckBox
+                                android:textColor="#FFFBFBFB"
+                                android:id="@+id/ExSniper"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Ex.Sniper" />
+                            <CheckBox
+                                android:textColor="#FFFBFBFB"
+                                android:id="@+id/ExAr"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Ex.Ar" />
+                            <CheckBox
+                                android:textColor="#FFFBFBFB"
+                                android:id="@+id/ExQdAr"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Ex.Qd.Ar" />
+                            <CheckBox
+                                android:textColor="#FFFBFBFB"
+                                android:id="@+id/QdAr"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Qd.Ar" />
+                            <CheckBox
+                                android:textColor="#FFFBFBFB"
+                                android:id="@+id/ExQdSMG"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Ex.Qd.SMG" />
+                            <CheckBox
+                                android:textColor="#FFFBFBFB"
+                                android:id="@+id/QuiverCrossBow"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Quiver CrossBow" />
+                            <CheckBox
+                                android:textColor="#FFFBFBFB"
+                                android:id="@+id/BulletLoop"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Bullet Loop" />
+                            <CheckBox
+                                android:textColor="#FFFFFFFF"
+                                android:id="@+id/ThumbGrip"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Thumb Grip" />
+                            <CheckBox
+                                android:textColor="#FFFFFFFF"
+                                android:id="@+id/LaserSight"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Laser Sight" />
+                            <CheckBox
+                                android:textColor="#FFFFFFFF"
+                                android:id="@+id/AngledGrip"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Angled Grip" />
+                            <CheckBox
+                                android:textColor="#FFFFFFFF"
+                                android:id="@+id/LightGrip"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Light Grip" />
+                            <CheckBox
+                                android:textColor="#FFFFFFFF"
+                                android:id="@+id/GasCan"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Gas Can" />
+                            <CheckBox
+                                android:textColor="#FFFFFFFF"
+                                android:id="@+id/FlashHiderSMG"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Flash Hider SMG" />
+                            <CheckBox
+                                android:textColor="#FFFFFFFF"
+                                android:id="@+id/VerticalGrip"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Vertical Grip" />
+                            <CheckBox
+                                android:textColor="#FFFFFFFF"
+                                android:id="@+id/CheekPad"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="CheekPad" />
+                        </TableLayout>
+                    </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/vehicles"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="4.0">
+                <ScrollView
+                    android:id="@+id/vscroll4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:id="@+id/vehicles1"
+                        android:background="#FF1F2C3F"
+                        android:padding="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:textStyle="bold"
+                            android:textColor="#FFFFFFFF"
+                            android:layout_gravity="center"
+                            android:id="@+id/vehiclemenu"
+                            android:visibility="visible"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Vehicles"
+                            android:textAlignment="center" />
+                        <TableLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <CheckBox
+                                android:textColor="#FFFFFFFF"
+                                android:id="@+id/Buggy"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:checked="true"
+                                android:text="Buggy" />
+                            <CheckBox
+                                android:textColor="#FFFFFFFF"
+                                android:id="@+id/UAZ"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:checked="true"
+                                android:text="UAZ" />
+                            <CheckBox
+                                android:textColor="#FFFFFFFF"
+                                android:id="@+id/Trike"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:checked="true"
+                                android:text="Trike" />
+                            <CheckBox
+                                android:textColor="#FFFFFFFF"
+                                android:id="@+id/Bike"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:checked="true"
+                                android:text="Bike" />
+                            <CheckBox
+                                android:textColor="#FFFFFFFF"
+                                android:id="@+id/Dacia"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:checked="true"
+                                android:text="Dacia" />
+                            <CheckBox
+                                android:textColor="#FFFFFFFF"
+                                android:id="@+id/Jet"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:checked="true"
+                                android:text="Jet-Ski" />
+                            <CheckBox
+                                android:textColor="#FFFFFFFF"
+                                android:id="@+id/Boat"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:checked="true"
+                                android:text="Boat" />
+                            <CheckBox
+                                android:textColor="#FFFFFFFF"
+                                android:id="@+id/Bus"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:checked="true"
+                                android:text="Bus" />
+                            <CheckBox
+                                android:textColor="#FFFFFFFF"
+                                android:id="@+id/Mirado"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:checked="true"
+                                android:text="Mirado" />
+                            <CheckBox
+                                android:textColor="#FFFFFFFF"
+                                android:id="@+id/Scooter"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:checked="true"
+                                android:text="Scooter" />
+                            <CheckBox
+                                android:textColor="#FFFFFFFF"
+                                android:id="@+id/Rony"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:checked="true"
+                                android:text="Rony" />
+                            <CheckBox
+                                android:textColor="#FFFFFFFF"
+                                android:id="@+id/Snowbike"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:checked="true"
+                                android:text="Snowbike" />
+                            <CheckBox
+                                android:textColor="#FFFFFFFF"
+                                android:id="@+id/Snowmobile"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:checked="true"
+                                android:text="Snowmobile" />
+                            <CheckBox
+                                android:textColor="#FFFFFFFF"
+                                android:id="@+id/Tempo"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:checked="true"
+                                android:text="Tempo" />
+                            <CheckBox
+                                android:textColor="#FFFFFFFF"
+                                android:id="@+id/Truck"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:checked="true"
+                                android:text="Truck" />
+                            <CheckBox
+                                android:textColor="#FFFFFFFF"
+                                android:id="@+id/MonsterTruck"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:checked="true"
+                                android:text="Monster Truck" />
+                            <CheckBox
+                                android:textColor="#FFFFFFFF"
+                                android:id="@+id/BRDM"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:checked="true"
+                                android:text="BRDM" />
+                            <CheckBox
+                                android:textColor="#FFFFFFFF"
+                                android:id="@+id/LadaNiva"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:checked="true"
+                                android:text="LadaNiva" />
+                        </TableLayout>
+                    </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/safe"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="4.0">
+                <ScrollView
+                    android:id="@+id/vscroll2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:id="@+id/safe1"
+                        android:background="#FF1F2C3F"
+                        android:padding="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    
+                        <TextView
+                            android:textSize="21sp"
+                            android:textStyle="bold"
+                            android:textColor="#FFFFFFFF"
+                            android:gravity="left"
+                            android:id="@+id/textView61"
+                            android:background="#FF1F2C3F"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:text="AIMBOT MENU(RISKY)" />
+                        <Switch
+                            android:textColor="#FFFFFFFF"
+                            android:id="@+id/aimbot"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Aimbot" />
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp">
+                            <TextView
+                                android:textStyle="bold"
+                                android:textColor="#FFFFFFFF"
+                                android:gravity="left"
+                                android:layout_gravity="center_horizontal"
+                                android:id="@+id/textView5"
+                                android:layout_width="50dp"
+                                android:layout_height="match_parent"
+                                android:text="Range" />
+                            <SeekBar
+                                android:id="@+id/range"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:max="1000"
+                                android:progress="200"
+                                android:layout_weight="1.0" />
+                        </LinearLayout>
+                        <TextView
+                            android:textSize="18sp"
+                            android:textColor="#FFFFFFFF"
+                            android:gravity="left"
+                            android:id="@+id/textView7"
+                            android:background="#FF1F2C3F"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Target" />
+                        <RadioGroup
+                            android:id="@+id/aimbotmode"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="15dp">
+                            <RadioButton
+                                android:textColor="#FFFFFFFF"
+                                android:id="@+id/radioButton"
+                                android:tag="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:checked="true"
+                                android:text="Head"
+                                android:layout_weight="1.0" />
+                            <RadioButton
+                                android:textColor="#FFFFFFFF"
+                                android:id="@+id/radioButton2"
+                                android:tag="2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Chest" />
+                            <RadioButton
+                                android:textColor="#FFFFFFFF"
+                                android:id="@+id/radioButton3"
+                                android:tag="3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Waist"
+                                android:layout_weight="3.0" />
+                        </RadioGroup>
+                        <TextView
+                            android:textSize="18sp"
+                            android:textColor="#FFFFFFFF"
+                            android:gravity="left"
+                            android:id="@+id/textView8"
+                            android:background="#FF1F2C3F"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Aim By" />
+                        <RadioGroup
+                            android:id="@+id/aimby"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="15dp">
+                            <RadioButton
+                                android:textColor="#FFFFFFFF"
+                                android:id="@+id/radioButton9"
+                                android:tag="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:checked="true"
+                                android:text="CrossHair"
+                                android:layout_weight="1.0" />
+                            <RadioButton
+                                android:textColor="#FFFFFFFF"
+                                android:id="@+id/radioButton4"
+                                android:tag="0"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Distance" />
+                        </RadioGroup>
+                        <TextView
+                            android:textSize="18sp"
+                            android:textColor="#FFFFFFFF"
+                            android:gravity="left"
+                            android:id="@+id/textView9"
+                            android:background="#FF1F2C3F"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Aim When" />
+                        <RadioGroup
+                            android:id="@+id/aimwhen"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="15dp">
+                            <RadioButton
+                                android:textColor="#FFFFFFFF"
+                                android:id="@+id/radioButton5"
+                                android:tag="3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:checked="true"
+                                android:text="ADS or Firing"
+                                android:layout_weight="1.0" />
+                            <RadioButton
+                                android:textColor="#FFFFFFFF"
+                                android:id="@+id/radioButton6"
+                                android:tag="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="ADS only" />
+                            <RadioButton
+                                android:textColor="#FFFFFFFF"
+                                android:id="@+id/radioButton7"
+                                android:tag="2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Firing Only" />
+                        </RadioGroup>
+                        <Switch
+                            android:textColor="#FFFFFFFF"
+                            android:id="@+id/aimknocked"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="Aim Knocked" />
+                       
+                    </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+             <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/MenuFB"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="4.0">
+                <ScrollView
+                    android:id="@+id/vscrollF"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:id="@+id/MenuFB1"
+                        android:background="#FF1F2C3F"
+                        android:padding="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        
+                          <Button
+                            android:textSize="12sp"
+                            android:textColor="#FF000000"
+                            android:id="@+id/bypass"
+                            android:background="@drawable/bg"
+                            android:padding="8dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginBottom="10dp"
+                            android:text="BYPASS (ʟᴏʙʙʏ)" />
+                          <Switch
+                            android:textColor="#FFFFFFFF"
+                            android:id="@+id/termination"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="ᴛᴇʀᴍɪɴᴀᴛɪᴏɴ ғɪx (sᴘᴀᴡɴ ɪsʟᴀɴᴅ)" />
+                     
+                        
+                        
+                            <TextView
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:textColor="#FFFFFFFF"
+                            android:gravity="left"
+                            android:id="@+id/textView61"
+                            android:background="#FF1F2C3F"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:text="ᴠɪᴇᴡ ᴍᴇɴᴜ" />
+                            					     <Switch
+                            android:textColor="#FFFFFFFF"
+                            android:id="@+id/nofog"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="ɴᴏ ғᴏɢ" />
+                            
+                                 <Switch
+                            android:textColor="#FFFFFFFF"
+                            android:id="@+id/notree"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="ɴᴏ ᴛʀᴇᴇ" />
+                            
+                                                    <Switch
+                            android:textColor="#FFFFFFFF"
+                            android:id="@+id/nograss"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="ɴᴏ ɢʀᴀss" />
+                            
+                                                   <Switch
+                            android:textColor="#FFFFFFFF"
+                            android:id="@+id/blacksky"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="ʙʟᴀᴄᴋ sᴋʏ" />
+                          <Switch
+                            android:textColor="#FFFFFFFF"
+                            android:id="@+id/blackbody"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="ʙʟᴀᴄᴋ ʙᴏᴅʏ" />
+                            <Switch
+                            android:textColor="#FFFFFFFF"
+                            android:id="@+id/nightmode"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="ɴɪɢʜᴛ ᴍᴏᴅᴇ" />
+
+                                                	<LinearLayout
+							android:orientation="horizontal"
+							android:layout_width="match_parent"
+							android:layout_height="30dp"
+							android:padding="0dp">						
+							
+							<TextView
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:text="ᴡɪᴅᴇ ᴠɪᴇᴡ :"
+								android:layout_marginStart="10dp"
+								android:layout_gravity="center"
+								android:textColor="#FFFFFFFF"/>
+
+							<SeekBar
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:layout_weight="1.0"
+								android:layout_marginRight="10dp"
+								android:layout_gravity="center"
+								android:min="0"
+								android:max="4"
+								android:id="@+id/seekbar_ipadview"/>
+
+							<TextView
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:text="0"
+								android:layout_marginEnd="10dp"
+								android:textColor="#FFFFFFFF"
+								android:layout_gravity="center"
+								android:id="@+id/textview_ipadview"/>
+                            
+                            </LinearLayout>
+                            
+                            <TextView
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:textColor="#FFFFFFFF"
+                            android:gravity="left"
+                            android:id="@+id/textView61"
+                            android:background="#FF1F2C3F"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:text="sᴛʀᴀɴɢᴇ ᴍᴇɴᴜ" />
+                                                       <Switch
+                            android:textColor="#FFFFFFFF"
+                            android:id="@+id/norecoil"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="ʀᴇᴅᴜᴄᴇ ʀᴇᴄᴏɪʟ" />
+                        <Switch
+                            android:textColor="#FFFFFFFF"
+                            android:id="@+id/antishake"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="ʀᴇᴍᴏᴠᴇ sʜᴀᴋᴇ" />
+                        <Switch
+                            android:textColor="#FFFFFFFF"
+                            android:id="@+id/smallSr"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="sᴍᴀʟʟ ᴄʀᴏssʜᴀɪʀ" />
+   					
+						     <Switch
+                            android:textColor="#FFFFFFFF"
+                            android:id="@+id/headshot"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="ʜᴇᴀᴅsʜᴏᴛ" />
+						
+						
+						
+						     <Switch
+                            android:textColor="#FFFFFFFF"
+                            android:id="@+id/insta"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="ɪɴsᴛᴀɴᴛ ʜɪᴛ" />
+                            
+						
+						     <Switch
+                            android:textColor="#FFFFFFFF"
+                            android:id="@+id/xhit"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="ʜɪᴛ ᴇғғᴇᴄᴛ x" />
+                            
+                            
+						     <Switch
+                            android:textColor="#FFFFFFFF"
+                            android:id="@+id/xhitz"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="ʜɪᴛ ᴇғғᴇᴄᴛ x2" />
+                            
+                            
+		     <Switch
+                            android:textColor="#FFFFFFFF"
+                            android:id="@+id/gudvew"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="ɢᴏᴅ ᴠɪᴇᴡ sɪᴛ" />
+                            
+                            
+                                 <Switch
+                            android:textColor="#FFFFFFFF"
+                            android:id="@+id/sscode"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="sᴛᴀɴᴅ sᴄᴏᴘᴇ" />
+                            
+                            
+                                 <Switch
+                            android:textColor="#FFFFFFFF"
+                            android:id="@+id/sitcope"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="sɪᴛ sᴄᴏᴘᴇ" />
+                            
+                            
+                                 <Switch
+                            android:textColor="#FFFFFFFF"
+                            android:id="@+id/pronescope"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="ᴘʀᴏɴᴇ sᴄᴏᴘᴇ" />
+                            
+                                                     
+                                  <TextView
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:textColor="#FFFFFFFF"
+                            android:gravity="left"
+                            android:id="@+id/textView61"
+                            android:background="#FF1F2C3F"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:text="sᴘᴇᴇᴅ ᴍᴇɴᴜ" />
+                                                             <Switch
+                            android:textColor="#FFFFFFFF"
+                            android:id="@+id/flass"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="ғʟᴀsʜ ᴠ1" />
+                                                          
+                                 <Switch
+                            android:textColor="#FFFFFFFF"
+                            android:id="@+id/dixflas"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="ғɪx sᴛᴜᴄᴋ" />
+                        
+                              
+                                 <Switch
+                            android:textColor="#FFFFFFFF"
+                            android:id="@+id/paras"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="ғᴀsᴛ ᴘᴀʀᴀ" />
+                                                         <Switch
+                            android:textColor="#FFFFFFFF"
+                            android:id="@+id/speedcar"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="sᴘᴇᴇᴅ ᴄᴀʀ" />
+                                                
+                   </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+                        
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/relativeLayoutParent"
+        android:padding="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:orientation="vertical"
+            android:id="@+id/layoutCollapsed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/floatLogo"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:src="@drawable/floaticon"
+                android:alpha="0.5" />
+        </RelativeLayout>
+    </RelativeLayout>
+</FrameLayout>

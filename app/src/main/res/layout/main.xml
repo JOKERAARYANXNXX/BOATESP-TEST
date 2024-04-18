@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:orientation="vertical"
+	android:id="@+id/mainLinearLayout"
+	android:background="@drawable/asu"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<LinearLayout
+		android:gravity="center_horizontal"
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_marginLeft="15dp"
+		android:layout_marginTop="10dp"
+		android:layout_marginRight="15dp">
+
+		<LinearLayout
+			android:gravity="center"
+			android:orientation="vertical"
+			android:background="@drawable/matane"
+			android:padding="10dp"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="20dp">
+
+			<LinearLayout
+				android:gravity="center_vertical"
+				android:orientation="horizontal"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+
+				<TextView
+					android:textSize="13dp"
+					android:textStyle="italic"
+					android:textColor="#FFFFFFFF"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Execution Mode        :"/>
+
+				<TextView
+					android:textSize="13sp"
+					android:textStyle="italic"
+					android:textColor="#FFFFFFFF"
+					android:id="@+id/textmode"
+					android:visibility="visible"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="null"/>
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+
+			<LinearLayout
+				android:orientation="horizontal"
+				android:padding="10dp"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content">
+
+				<Button
+					android:textStyle="bold"
+					android:textColor="#FFFFFFFF"
+					android:id="@+id/button1"
+					android:visibility="visible"
+					android:layout_width="150dp"
+					android:layout_height="70dp"
+					android:text="START ESP"
+					android:layout_weight="1.0"
+					android:textAllCaps="false"
+					android:backgroundTint="#FF673AB7"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:orientation="horizontal"
+				android:padding="10dp"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content">
+
+				<Button
+					android:textStyle="bold"
+					android:textColor="#FFFFFFFF"
+					android:id="@+id/button2"
+					android:visibility="visible"
+					android:layout_width="150dp"
+					android:layout_height="70dp"
+					android:text="STOP ESP"
+					android:layout_weight="1.0"
+					android:textAllCaps="false"
+					android:backgroundTint="#FFF44336"/>
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="150dp">
+
+			<Spinner
+				android:id="@+id/spinner"
+				android:layout_width="186dp"
+				android:layout_height="32dp"
+				android:spinnerMode="dropdown"
+				android:layout_marginBottom="25dp"
+				android:background="@drawable/matane"
+				android:layout_gravity="center"
+				android:layout_marginTop="30dp"/>
+
+			<RadioGroup
+				android:id="@+id/radioBit"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				android:gravity="center"
+				android:layout_marginTop="10dp">
+
+				<RadioButton
+					android:id="@+id/radiobutton5"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="4dp"
+					android:text="32 Bit"
+					android:textSize="16sp"
+					android:textColor="#FFFFFFFF"/>
+
+				<RadioButton
+					android:id="@+id/radiobutton6"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="4dp"
+					android:text="64 Bit"
+					android:textSize="16sp"
+					android:textColor="#FFFFFFFF"/>
+
+			</RadioGroup>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:orientation="horizontal"
+			android:background="#FFFFFFFF"
+			android:layout_width="match_parent"
+			android:layout_height="0.5dp"/>
+
+		<Button
+			android:textColor="#FFFFFFFF"
+			android:gravity="center_vertical"
+			android:id="@+id/TeleBtn"
+			android:background="#006F1111"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="JOIN CHANNEL"
+			android:fontFamily="@font/spartaco"
+			android:onClick="Telegram"/>
+
+		<LinearLayout
+			android:orientation="horizontal"
+			android:background="#FFFFFFFF"
+			android:layout_width="match_parent"
+			android:layout_height="0.5dp"/>
+
+		<Button
+			android:textColor="#FFFFFFFF"
+			android:gravity="center_vertical"
+			android:id="@+id/ChBtn"
+			android:background="#006F1111"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="SUPPORT CHAT"
+			android:fontFamily="@font/spartaco"
+			android:onClick="TelegramChat"/>
+
+		<LinearLayout
+			android:orientation="horizontal"
+			android:background="#FFFFFFFF"
+			android:layout_width="match_parent"
+			android:layout_height="0.5dp"/>
+
+		<LinearLayout
+			android:gravity="bottom|center"
+			android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+
+			<TextView
+				android:textSize="15sp"
+				android:textColor="#FFFFFFFF"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="TEAM 7H"
+				android:fontFamily="@font/fonts"/>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:gravity="bottom|center"
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+		<TextView
+			android:textSize="12sp"
+			android:textColor="#FFABDCED"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="gm2_loader_version_1_5_0"/>
+
+		<TextView
+			android:textSize="12sp"
+			android:typeface="monospace"
+			android:textColor="#FFFFFFFF"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="10dp"
+			android:text="app_version_1_0_n_a_core_version_n_a"/>
+
+	</LinearLayout>
+
+</LinearLayout>
+
